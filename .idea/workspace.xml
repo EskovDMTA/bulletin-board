@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/custom-build.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rails-project-65.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-project-65.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701468455189</updated>
       <workItem from="1701468456656" duration="43000" />
-      <workItem from="1701500688032" duration="3807000" />
+      <workItem from="1701500688032" duration="5190000" />
     </task>
     <servers />
   </component>

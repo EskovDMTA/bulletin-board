@@ -1,7 +1,6 @@
 require:
   - rubocop-slim
   - rubocop-rails
-  - rubocop-rake
 
 AllCops:
   NewCops: enable
