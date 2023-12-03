@@ -1,0 +1,8 @@
+h1
+  = @welcome
+
+- if current_user
+  = link_to 'Sign out', callback_auth_path
+- else
+  = button_to 'Sign in with GitHub', auth_request_path(provider: 'github')
+
