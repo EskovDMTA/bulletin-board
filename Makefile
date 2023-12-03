@@ -11,4 +11,7 @@ test:
 lint:
 	bundle exec rubocop
 
+init-env:
+	cp env.example .env
+
 .PHONY: test
