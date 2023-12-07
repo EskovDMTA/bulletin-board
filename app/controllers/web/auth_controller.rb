@@ -4,12 +4,14 @@ module Web
   class AuthController < Web::ApplicationController
     def callback
       auth = request.env['omniauth.auth']
-      User.find_by(provider: auth['provider'], uid: auth['uid']) || User.create_with_omniauth(auth)
-      redirect_to root_path, notice: 'Signed in successfully.'
+      user = User.find_by(provider: auth['provider'], uid: auth['uid']) || User.create_with_omniauth(auth)
+      session[:user_id] = user.id
+      redirect_to root_path, notice: 'Signed in successfully!'
     end
 
-    def request
-      redirect_to "/auth/#{params[:provider]}"
+    def destroy
+      session[:user_id] = nil
+      redirect_to root_path, notice: 'Logout successfully!'
     end
   end
 end
