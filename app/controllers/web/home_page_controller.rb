@@ -3,7 +3,7 @@
 module Web
   class HomePageController < Web::ApplicationController
     def home
-      @welcome = 'WelcomePage'
+      @bulletins = Bulletin.order(created_at: :desc)
     end
   end
 end

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  has_many :bulletins, dependent: :destroy
   class << self
     def create_with_omniauth(auth)
       create! do |user|

@@ -1,0 +1,12 @@
+= simple_form_for @bulletin, data: { turbo: false } do |f|
+    - if @bulletin.errors.any?
+        .alert.alert-danger
+            h2= "#{pluralize(@bulletin.errors.count, 'error')} prohibited this bulletin from being saved:"
+            ul
+                - @bulletin.errors.full_messages.each do |message|
+                    li= message
+    = f.input :title
+    = f.input :description
+    = f.association :category, collection: Category.all, prompt: 'Select a category'
+    = f.input :image, as: :file
+    = f.button :submit

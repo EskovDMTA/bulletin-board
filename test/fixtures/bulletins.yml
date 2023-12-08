@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Batman
+  description: Batman from night
+  user: one
+  category: three
+  image: <%= fixture_file_upload('files/lamp.png', 'image/png') %>
+
+two:
+  title: Alien
+  description: Alien from alien
+  user: two
+  category: one
+  image: <%= fixture_file_upload('files/lamp.png', 'image/png') %>
