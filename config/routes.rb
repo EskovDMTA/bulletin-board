@@ -7,9 +7,24 @@ Rails.application.routes.draw do
     post 'auth/:provider', to: 'auth#request', as: :auth_request
     delete 'auth/logout', to: 'auth#destroy'
     get 'auth/:provider/callback', to: 'auth#callback', as: :callback_auth
-    resources :bulletins
+    resources :bulletins do
+      member do
+        post :submit_for_moderation
+        post :archive
+      end
+    end
+    resources :profile, only: %i[index]
+
     namespace :admin do
-      resources :bulletins
+      root 'home#index'
+      resources :bulletins, only: :index do
+        member do
+          post :approve
+          post :archive
+          post :publish
+          post :reject
+        end
+      end
       resources :categories
     end
   end

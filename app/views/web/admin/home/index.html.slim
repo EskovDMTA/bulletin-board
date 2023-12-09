@@ -1,0 +1,35 @@
+h1
+  | Listing Bulletins
+= link_to 'New Bulletin', new_bulletin_path
+table
+  thead
+    tr
+      th
+        | Title
+      th
+        | Description
+      th
+        | State
+      th[colspan="3"]
+  tbody
+    - @bulletins.each do |bulletin|
+      tr
+        td
+          = bulletin.title
+        td
+          = bulletin.description
+        td
+          = bulletin.state
+        td
+          = link_to 'Show', bulletin
+        td
+          = link_to 'Edit', edit_bulletin_path(bulletin)
+        td
+          - if bulletin.state == 'draft'
+            = link_to 'Submit for Moderation', submit_for_moderation_bulletin_path(bulletin), data: { turbo_method: :post }
+          - elsif bulletin.state == 'under_moderation'
+            = link_to 'Approve', approve_admin_bulletin_path(bulletin), data: { turbo_method: :post }
+            = link_to 'Reject', reject_admin_bulletin_path(bulletin), data: { turbo_method: :post }
+          - elsif bulletin.state == 'published'
+            = link_to 'Archive', archive_bulletin_path(bulletin), data: { turbo_method: :post }
+

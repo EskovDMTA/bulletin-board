@@ -26,6 +26,6 @@ class BulletinPolicy < ApplicationPolicy
   end
 
   def create?
-    false
+    new?
   end
 end

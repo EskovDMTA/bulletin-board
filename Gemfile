@@ -30,6 +30,7 @@ gem 'stimulus-rails'
 gem 'cssbundling-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
+gem 'aasm'
 gem 'jbuilder'
 gem 'pundit'
 gem 'rollbar'
@@ -57,7 +58,7 @@ gem 'omniauth-github'
 gem 'omniauth-rails_csrf_protection'
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"

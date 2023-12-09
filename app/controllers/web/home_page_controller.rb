@@ -3,7 +3,7 @@
 module Web
   class HomePageController < Web::ApplicationController
     def home
-      @bulletins = Bulletin.order(created_at: :desc)
+      @bulletins = Bulletin.where(state: :published).order(created_at: :desc)
     end
   end
 end

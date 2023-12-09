@@ -1,6 +1,31 @@
 # frozen_string_literal: true
 
 class Bulletin < ApplicationRecord
+  include AASM
+
+  aasm column: 'state' do
+    state :draft, initial: true
+    state :under_moderation
+    state :published
+    state :rejected
+    state :archived
+
+    event :submit_for_moderation do
+      transitions from: :draft, to: :under_moderation
+    end
+
+    event :approve do
+      transitions from: :under_moderation, to: :published
+    end
+
+    event :reject do
+      transitions from: %i[draft under_moderation], to: :rejected
+    end
+
+    event :archive do
+      transitions to: :archived
+    end
+  end
   belongs_to :user
   belongs_to :category
 
