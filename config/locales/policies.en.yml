@@ -1,0 +1,14 @@
+en:
+  pundit:
+    bulletin_policy:
+      index?: "Fail authentication"
+      show?: "You are not allowed to view this bulletin."
+      update?: "You are not allowed to update this bulletin."
+      new?: "You are not allowed to create bulletin. You need authorize."
+      create?: "You are not allowed to create bulletin. You need authorize."
+      default?: "Dont have permission to do this."
+      admin_index?: "Only for admin"
+
+
+
+

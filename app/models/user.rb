@@ -11,5 +11,9 @@ class User < ApplicationRecord
         user.email = auth['info']['email']
       end
     end
+
+    def admin?
+      admin
+    end
   end
 end

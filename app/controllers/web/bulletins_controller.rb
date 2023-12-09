@@ -2,11 +2,12 @@
 
 module Web
   class BulletinsController < Web::ApplicationController
-    before_action :check_user_authenticate, only: %i[new create]
+    before_action :authorize_bulletin, only: %i[new create]
 
     def new
       user = User.find(session[:user_id])
       @bulletin = Bulletin.new(user_id: user.id)
+      authorize @bulletin
     end
 
     def create
@@ -25,10 +26,13 @@ module Web
       params.require(:bulletin).permit(:title, :description, :image, :category_id)
     end
 
-    def check_user_authenticate
-      return unless session[:user_id].nil?
-
-      redirect_to root_path, notice: 'Need authorize'
+    # def check_user_authenticate
+    #   return unless session[:user_id].nil?
+    #
+    #   redirect_to root_path, notice: 'Need authorize'
+    # end
+    def authorize_bulletin
+      authorize Bulletin
     end
   end
 end

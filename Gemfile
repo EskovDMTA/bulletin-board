@@ -31,6 +31,7 @@ gem 'cssbundling-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
+gem 'pundit'
 gem 'rollbar'
 gem 'simple_form'
 gem 'slim'

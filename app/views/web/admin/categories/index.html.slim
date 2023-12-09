@@ -1,0 +1,7 @@
+h1 Categories
+
+- @categories.each do |category|
+  p
+    = category.name
+  div
+  = button_to 'delete', admin_category_path(category), method: :delete

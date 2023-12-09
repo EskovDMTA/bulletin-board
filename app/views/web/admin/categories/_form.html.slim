@@ -1,0 +1,9 @@
+= simple_form_for @category, url: admin_categories_path, data: { turbo: false } do |f|
+  - if @category.errors.any?
+    .alert.alert-danger
+      h2= "#{pluralize(@category.errors.count, 'error')} prohibited this bulletin from being saved:"
+      ul
+        - @category.errors.full_messages.each do |message|
+          li= message
+  = f.input :name
+  = f.button :submit
