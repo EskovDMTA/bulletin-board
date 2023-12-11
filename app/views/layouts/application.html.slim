@@ -1,5 +1,5 @@
 doctype html
-html
+html.h-100
   head
     title
       | RailsProject65
@@ -8,9 +8,22 @@ html
     = csp_meta_tag
     = stylesheet_link_tag 'application', 'data-turbo-track': 'reload'
     = javascript_include_tag 'application', 'data-turbo-track': 'reload', defer: true
-  body
+
+  body.d-flex.flex-column.h-100
     = render partial: 'web/shared/header'
     - if notice
       h1
         = notice
-    = yield
+
+    main
+      .mt-4.mb-5.pb-5
+        .container
+          .p-4.align-items-center.border.shadow.bg-white.rounded-3
+            .row
+              .p-3.p-lg-5.pt-lg-0
+                .mb-4
+                  = yield
+
+
+    = render partial: 'web/shared/footer'
+

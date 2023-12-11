@@ -1,0 +1,11 @@
+.row.mt-2
+  - bulletins.each do |bulletin|
+    .col-3.pt-2
+      .card[style="width: 18rem;"]
+        = image_tag bulletin.image.variant(:bulletin_image), class: 'card-img-top'
+        .card-body
+          h5.card-title
+            = bulletin.title
+          p.card-text
+            = bulletin.description
+          = link_to bulletin.title, bulletin_path(bulletin), class: 'btn btn-primary'

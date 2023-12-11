@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/rails-project-65.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-project-65.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/home_page_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/home_page_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/bulletin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bulletin.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/application_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/application_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/bulletin_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/bulletin_policy.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/web/home_page/home.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/home_page/home.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +118,7 @@
       <workItem from="1702106822538" duration="37249000" />
       <workItem from="1702200439787" duration="2446000" />
       <workItem from="1702230950399" duration="1564000" />
-      <workItem from="1702317299343" duration="4509000" />
+      <workItem from="1702317299343" duration="9462000" />
     </task>
     <servers />
   </component>

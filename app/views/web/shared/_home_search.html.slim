@@ -1,0 +1,10 @@
+= search_form_for q, url:, method: :get do |f|
+  = f.label :title, 'Search by Title'
+  = f.search_field :title_eq
+  = f.label :state, 'Filter by State'
+  = f.input :category_id_eq,
+          as: :select,
+          collection: Category.pluck(:name, :id),
+          label: false,
+          hint: t('web.bulletins.search_form.search_state')
+  = f.submit 'Search'
