@@ -9,6 +9,7 @@ html
     = stylesheet_link_tag 'application', 'data-turbo-track': 'reload'
     = javascript_include_tag 'application', 'data-turbo-track': 'reload', defer: true
   body
+    = render partial: 'web/shared/header'
     - if notice
       h1
         = notice

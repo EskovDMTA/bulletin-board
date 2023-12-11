@@ -17,10 +17,6 @@ class BulletinPolicy < ApplicationPolicy
     true
   end
 
-  def home?
-    false
-  end
-
   def new?
     user
   end

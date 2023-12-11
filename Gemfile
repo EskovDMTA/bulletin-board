@@ -36,6 +36,8 @@ gem 'pundit'
 gem 'rollbar'
 gem 'simple_form'
 gem 'slim'
+gem 'ransack'
+gem 'kaminari'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"

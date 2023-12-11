@@ -3,7 +3,8 @@
 module Web
   class HomePageController < Web::ApplicationController
     def home
-      @bulletins = Bulletin.where(state: :published).order(created_at: :desc)
+      @q = Bulletin.order(title: :desc).ransack(params[:q])
+      @bulletins = @q.result(distinct: true).page(params[:page]).per(3)
     end
   end
 end

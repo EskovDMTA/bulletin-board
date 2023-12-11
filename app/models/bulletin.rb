@@ -26,8 +26,8 @@ class Bulletin < ApplicationRecord
       transitions to: :archived
     end
   end
-  belongs_to :user
-  belongs_to :category
+  belongs_to :user, inverse_of: :bulletins, optional: false
+  belongs_to :category, inverse_of: :bulletins, optional: false
 
   has_one_attached :image do |attachable|
     attachable.variant :bulletin_image, resize_to_limit: [300, 300]
@@ -41,5 +41,17 @@ class Bulletin < ApplicationRecord
 
     errors.add(:image, 'image should be less than 5MB')
     image.purge
+  end
+
+  def self.ransackable_associations(_auth_object = nil)
+    %w[category image_attachment image_blob user]
+  end
+
+  def self.ransackable_attributes(_auth_object = nil)
+    %w[state title category]
+  end
+
+  def self.states
+    @states ||= aasm.states.map(&:name)
   end
 end

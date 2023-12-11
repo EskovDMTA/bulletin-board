@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="" />
+    <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/rails-project-65.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-project-65.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/home_page_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/home_page_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/bulletin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bulletin.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/application_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/application_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/bulletin_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/bulletin_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/home_page/home.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/home_page/home.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +50,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eskovdmt/Documents/projects/hexlet/notice-board/rails-project-65/app/controllers/admin&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eskovdmt/Documents/projects/hexlet/notice-board/rails-project-65/app/views/web/admin/bulletins&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -49,13 +64,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/web/admin/bulletins" />
+      <recent name="$PROJECT_DIR$/app/controllers/web/admin" />
       <recent name="$PROJECT_DIR$/app/controllers/admin" />
       <recent name="$PROJECT_DIR$/app/controllers/api" />
       <recent name="$PROJECT_DIR$/app/controllers/web" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/.github/workflows" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/web/admin/home" />
+      <recent name="$PROJECT_DIR$/app/controllers/web" />
+      <recent name="$PROJECT_DIR$/app/policies/web/admin" />
       <recent name="$PROJECT_DIR$/app/views/web/bulletin" />
       <recent name="$PROJECT_DIR$/test/fixtures/files" />
     </key>
@@ -108,6 +126,10 @@
       <workItem from="1701711443256" duration="5320000" />
       <workItem from="1701971731970" duration="9160000" />
       <workItem from="1702056427579" duration="9400000" />
+      <workItem from="1702106822538" duration="37249000" />
+      <workItem from="1702200439787" duration="2446000" />
+      <workItem from="1702230950399" duration="1564000" />
+      <workItem from="1702317299343" duration="4509000" />
     </task>
     <servers />
   </component>
