@@ -1,0 +1,17 @@
+.row.my-2
+  .p-3
+      = search_form_for q, url:, method: :get, html: { class: 'form-inline' } do |f|
+          .form-group
+              = f.label :title, 'Искать по названию объявления', class: 'mr-2'
+              = f.search_field :title_eq, class: 'form-control mr-2 mb-4'
+
+          .form-group
+            = f.label :state, 'Искать по состоянию', class: 'mr-2'
+            = f.select :state_eq,
+                      Bulletin.states,
+                      { include_blank: '' },
+                      class: 'form-control mr-2 mb-4',
+                      label: false,
+                      prompt: t('web.bulletins.search_form.search_state')
+
+          = f.submit 'Search', class: 'btn btn-primary'

@@ -2,6 +2,7 @@
 
 class Bulletin < ApplicationRecord
   include AASM
+  include ActionView::Helpers::DateHelper
 
   aasm column: 'state' do
     state :draft, initial: true
@@ -49,6 +50,14 @@ class Bulletin < ApplicationRecord
 
   def self.ransackable_attributes(_auth_object = nil)
     %w[state title category]
+  end
+
+  def formatted_created_at
+    created_at.strftime('%d %B %Y')
+  end
+
+  def time_ago
+    time_ago_in_words(created_at)
   end
 
   def self.states

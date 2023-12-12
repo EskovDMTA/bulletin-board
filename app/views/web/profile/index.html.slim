@@ -1,32 +1,39 @@
 h1
-  | Listing Bulletins
-= link_to 'New Bulletin', new_bulletin_path
-table
-  thead
-    tr
-      th
-        | Title
-      th
-        | Description
-      th
-        | State
-      th[colspan="3"]
-  tbody
-    - @bulletins.each do |bulletin|
+  | Мои объявления
+hr
+= link_to 'Добавить объявление', new_bulletin_path
+= render partial: 'web/shared/profile_search', locals: { q: @q, url: profile_index_path }
+.row.mt-2
+  table.table.table-borderless
+    thead
       tr
-        td
-          = bulletin.title
-        td
-          = bulletin.description
-        td
-          = bulletin.state
-        td
-          = link_to 'Show', bulletin
-        td
-          = link_to 'Edit', edit_bulletin_path(bulletin)
-        td
-          - if bulletin.state == 'draft'
-            = link_to 'Submit for Moderation', submit_for_moderation_bulletin_path(bulletin), data: { turbo_method: :post }
-          - elsif bulletin.state == 'published'
-            = link_to 'Archive', archive_bulletin_path(bulletin), data: { turbo_method: :post }
-
+        th
+          | Название
+        th
+          | Описание
+        th
+          | Состояние
+        th
+          | Дата создания
+        th
+          | Действия
+    tbody
+      - @bulletins.each do |bulletin|
+        tr
+          td
+            = bulletin.title
+          td
+            = bulletin.description
+          td
+            = bulletin.state
+          td
+            = "#{time_ago_in_words(bulletin.created_at)} назад"
+          td
+            = link_to 'Показать', bulletin_path(bulletin), class: 'me-2'
+            = link_to 'Редактировать', edit_bulletin_path(bulletin), class: 'me-2'
+            - if bulletin.state == 'draft'
+              = link_to 'Отправить на модерацию', submit_for_moderation_bulletin_path(bulletin), data: { turbo_method: :post }, 
+class: 'me-2'
+            - elsif bulletin.state == 'published'
+              = link_to 'В архив', archive_bulletin_path(bulletin), data: { turbo_method: :post, confirm: 'Подтвердить архивацию' }, 
+class: 'me-2 text-danger'

@@ -1,12 +1,23 @@
-= simple_form_for @bulletin, data: { turbo: false } do |f|
-    - if @bulletin.errors.any?
-        .alert.alert-danger
-            h2= "#{pluralize(@bulletin.errors.count, 'error')} prohibited this bulletin from being saved:"
-            ul
-                - @bulletin.errors.full_messages.each do |message|
-                    li= message
-    = f.input :title
-    = f.input :description
-    = f.association :category, collection: Category.all, prompt: 'Select a category'
-    = f.input :image, as: :file
-    = f.button :submit
+= simple_form_for @bulletin, html: { class: 'form', multipart: true } do |f|
+  - if @bulletin.errors.any?
+    .alert.alert-danger
+      h2= "#{pluralize(@bulletin.errors.count, 'error')} prohibited this bulletin from being saved:"
+      ul
+        - @bulletin.errors.full_messages.each do |message|
+          li= message
+
+  .form-group.mb-3.string.required.bulletin_title
+    = f.input :title, input_html: { class: 'form-control' }
+
+  .form-group.mb-3.text.required.bulletin_description
+    = f.input :description, as: :text, input_html: { class: 'form-control' }
+
+  .form-group.mb-3.select.required.bulletin_category
+    = f.label :category_id, 'Категория', class: 'required'
+    = f.collection_select :category_id, Category.all, :id, :name, { prompt: 'Выберите категорию' }, { class: 'form-control' }
+
+  .form-group.file.required.bulletin_image
+    = f.label :image, 'Изображение', class: 'required'
+    = f.input :image, label: false, as: :file, input_html: { class: 'form-control-file' }
+
+  = f.button :submit, 'Создать объявление', class: 'mt-4 btn btn-primary', data: { turbo: false }
