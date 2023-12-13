@@ -6,7 +6,7 @@ module Web
       before_action :set_bulletin, only: %i[approve reject archive]
 
       def index
-        @bulletins = Bulletin.order(created_at: :desc)
+        @bulletins = Bulletin.order(created_at: :desc).page(params[:page]).per(25)
         authorize @bulletins, :admin_index?
       end
 

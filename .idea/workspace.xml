@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/home_page_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/home_page_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/profile_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/profile_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/bulletin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bulletin.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/bulletins/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/bulletins/_form.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/bulletins/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/bulletins/new.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_bulletins.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_bulletins.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_home_search.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_home_search.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +122,7 @@
       <workItem from="1702200439787" duration="2446000" />
       <workItem from="1702230950399" duration="1564000" />
       <workItem from="1702317299343" duration="11345000" />
-      <workItem from="1702402943082" duration="6884000" />
+      <workItem from="1702402943082" duration="15104000" />
     </task>
     <servers />
   </component>
