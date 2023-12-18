@@ -5,11 +5,11 @@ one:
   description: Batman from night
   user: one
   category: three
-  image: <%= fixture_file_upload('files/lamp.png', 'image/png') %>
+  image: test/fixtures/files/lamp.png
 
 two:
   title: Alien
   description: Alien from alien
   user: two
   category: one
-  image: <%= fixture_file_upload('files/lamp.png', 'image/png') %>
+  image: test/fixtures/files/lamp.png

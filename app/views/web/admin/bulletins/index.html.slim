@@ -1,12 +1,15 @@
 .col-md-9
   h1.h2.mb-4
     | Объявления на модерации
+  = render partial: 'web/shared/profile_search', locals: { q: @q, url: admin_bulletins_path }
   .row.mt-2
     table.table.table-borderless
       thead
         tr
           th
             | Имя
+          th
+            | Состояние
           th
             | Дата создания
           th
@@ -16,6 +19,8 @@
           tr
             td
               = link_to bulletin.title, bulletin_path(bulletin)
+              td
+                = bulletin.state_label
             td
               | #{time_ago_in_words(bulletin.created_at)}
             td

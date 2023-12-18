@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'test_helper'
+
 module Web
   class AuthControllerTest < ActionDispatch::IntegrationTest
     test 'check github auth' do

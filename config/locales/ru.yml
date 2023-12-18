@@ -1,0 +1,63 @@
+ru:
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "около часа"
+        other: "около %{count} часов"
+      x_minutes:
+        one: "%{count} минуту"
+        other: "%{count} минут"
+      x_days:
+        one: "%{count} день"
+        few: "%{count} дня"
+        many: "%{count} дней"
+        other: "%{count} дней"
+
+  bulletins:
+    add: 'Добавить объявление'
+    show: "Показать"
+    edit: "Редактировать"
+    submit_for_moderation: "Отправить на модерацию"
+    archive: "В архив"
+
+  create_bulletin:
+    page_title: 'Добавить объявление'
+    title: 'Название'
+    description: 'Описание'
+    category: 'Категория'
+    category_placeholder: 'Выберите категорию'
+    image: 'Изображение'
+    image_placeholder: 'Файл не выбран'
+    create_button: 'Создать объявление'
+
+  bulletins_table:
+    table_name: 'Название'
+    table_state: 'Состояние'
+    table_date: 'Дата создания'
+    table_actions: 'Действия'
+    action_show: 'Показать'
+    action_edit: 'Редактировать'
+    action_to_moderate: 'На модерацию'
+    action_to_archive: 'В архив'
+
+  authentication:
+    logout: 'Успешно'
+    login: 'Успешно'
+
+  categories:
+    new:
+      page_title: 'Новая категория'
+    update:
+      page_title: 'Обновить категорию'
+
+
+  helpers:
+    submit:
+      category:
+        create: "Создать категорию"
+        update: "Обновить категорию"
+
+  activerecord:
+    attributes:
+      category:
+        name: 'Название'

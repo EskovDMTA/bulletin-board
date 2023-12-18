@@ -1,39 +1,35 @@
 h1
-  | Мои объявления
+  =t('profile.page_title')
 hr
-= link_to 'Добавить объявление', new_bulletin_path
+= link_to t('bulletins.add'), new_bulletin_path
 = render partial: 'web/shared/profile_search', locals: { q: @q, url: profile_index_path }
 .row.mt-2
   table.table.table-borderless
     thead
       tr
         th
-          | Название
+          = t('bulletins_table.table_name')
         th
-          | Описание
+          = t('bulletins_table.table_state')
         th
-          | Состояние
+          = t('bulletins_table.table_date')
         th
-          | Дата создания
-        th
-          | Действия
+          = t('bulletins_table.table_actions')
     tbody
       - @bulletins.each do |bulletin|
         tr
           td
             = bulletin.title
           td
-            = bulletin.description
+            = bulletin.state_label
           td
-            = bulletin.state
+            = time_ago_in_words(bulletin.created_at).to_s
           td
-            = "#{time_ago_in_words(bulletin.created_at)} назад"
-          td
-            = link_to 'Показать', bulletin_path(bulletin), class: 'me-2'
-            = link_to 'Редактировать', edit_bulletin_path(bulletin), class: 'me-2'
+            = link_to t('bulletins.show'), bulletin_path(bulletin), class: 'me-2'
+            = link_to t('bulletins.edit'), edit_bulletin_path(bulletin), class: 'me-2'
             - if bulletin.state == 'draft'
-              = link_to 'Отправить на модерацию', submit_for_moderation_bulletin_path(bulletin), data: { turbo_method: :post }, 
-class: 'me-2'
-            - elsif bulletin.state == 'published'
-              = link_to 'В архив', archive_bulletin_path(bulletin), data: { turbo_method: :post, confirm: 'Подтвердить архивацию' }, 
-class: 'me-2 text-danger'
+              = link_to t('bulletins.submit_for_moderation'), submit_for_moderation_bulletin_path(bulletin),
+                      data: { turbo_method: :post }, class: 'me-2'
+            - elsif bulletin.state != 'archived'
+              = link_to t('bulletins.archive'), archive_bulletin_path(bulletin), data: { turbo_method: :post,
+                      confirm: 'Подтвердить архивацию' }, class: 'me-2 text-danger'

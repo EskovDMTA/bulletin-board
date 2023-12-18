@@ -5,7 +5,7 @@ class CreateBulletins < ActiveRecord::Migration[7.0]
     create_table :bulletins do |t|
       t.string :title, limit: 50, null: false
       t.string :description, limit: 1000, null: false
-      t.binary :image, limit: 5.megabytes, null: false
+      t.string :image, limit: 3.megabytes, null: false
       t.references :user, null: false, foreign_key: true
       t.references :category, null: false, foreign_key: true
 

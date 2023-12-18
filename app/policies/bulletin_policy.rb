@@ -1,16 +1,8 @@
 # frozen_string_literal: true
 
 class BulletinPolicy < ApplicationPolicy
-  def admin_index?
+  def admin?
     user&.admin?
-  end
-
-  def admin_new?
-    admin_index?
-  end
-
-  def admin_create?
-    admin_index?
   end
 
   def index?

@@ -1,0 +1,6 @@
+ru:
+  home_search:
+    search_by: 'Искать по названию объявления'
+    filter_by: 'Выбрать категорию'
+    search_button: 'Искать'
+    reset_button: 'Сброс'

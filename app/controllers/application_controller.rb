@@ -8,11 +8,8 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def user_not_authorized(exception)
-    policy_name = exception.policy.class.to_s.underscore
-    redirect_to (request.referer || root_path), notice: t("#{policy_name}.#{exception.query}",
-                                                          scope: 'pundit',
-                                                          default: :default)
+  def user_not_authorized
+    redirect_to (request.referer || root_path), notice: t('login_or_registration', scope: 'pundit')
   end
 
   def current_user

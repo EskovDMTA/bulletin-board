@@ -2,8 +2,7 @@
   - bulletins.each do |bulletin|
     .col-3.pt-2
       .card.shadow-sm
-        = image_tag bulletin.image.variant(:bulletin_image), class: 'card-img-top x-object-fit-cover', style: 'height: 200px;'
-        / img.card-img-top.x-object-fit-cover[height="200" src="https://rails-bulletin-board-ru.hexlet.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWhlIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1bc5f14ca2d511cf92d7fd8539f7dff7747669a9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLUUFUQT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--c5e4fe5c315d37208f0aad777051c5c1e875c2af/bulletin_16.jpg"]
+        = image_tag bulletin.image.url, class: 'card-img-top x-object-fit-cover', style: 'height: 200px;'
         .card-body
           = link_to bulletin_path(bulletin) do
             h5.card-title

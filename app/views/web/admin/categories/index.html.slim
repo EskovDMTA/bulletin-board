@@ -1,17 +1,17 @@
 .col-md-9
   h1.h2.mb-4
-    | Категории
-  = link_to 'Добавить категорию', new_admin_category_path, class: 'btn btn-primary mb-2'
+    =t('category.title_page')
+  = link_to t('category.add_category'), new_admin_category_path, class: 'btn btn-primary mb-2'
   .row.mt-2
     table.table.table-borderless
       thead
         tr
           th
-            | ID
+            =t('category.table_id')
           th
-            | Название
+            =t('category.table_name')
           th
-            | Действия
+            =t('category.table_actions')
       tbody
         - @categories.each do |category|
           tr
@@ -21,5 +21,6 @@
               = category.name
             td
               = link_to 'Редактировать', edit_admin_category_path(category), class: 'me-1'
-              = link_to 'Удалить', admin_category_path(category), data: { turbo_method: :delete, confirm: 'Подтвердить удаление' }, 
+              = link_to 'Удалить', admin_category_path(category), data: { turbo_method: :delete,
+                      turbo_confirm: 'Подтвердить удаление?' },
 class: 'text-danger me-1'

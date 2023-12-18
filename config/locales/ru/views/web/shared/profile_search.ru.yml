@@ -1,0 +1,13 @@
+ru:
+  profile_search:
+    search_by: 'Искать по названию объявления'
+    filter_by: 'По состоянию'
+    search_button: 'Искать'
+    reset_button: 'Сброс'
+
+  bulletin:
+    state_draft: "Черновик"
+    state_under_moderation: "На модерации"
+    state_published: "Опубликовано"
+    state_rejected: "Возвращено"
+    state_archived: "В архиве"

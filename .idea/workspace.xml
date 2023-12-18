@@ -5,12 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/rails-project-65.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-project-65.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/categories_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/home_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/bulletin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bulletin.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/bulletin_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/bulletin_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/admin.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/admin.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/_form.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/destroy.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/destroy.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/new.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/bulletins/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/bulletins/_form.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/bulletins/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/bulletins/new.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/home_page/home.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/home_page/home.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_bulletins.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_bulletins.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_footer.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_footer.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_header.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_header.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_home_search.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_home_search.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_navbar.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_navbar.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_profile_search.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_profile_search.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/bulletin.en.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/policies.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/policies.en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20231207185745_create_bulletins.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20231207185745_create_bulletins.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20231208191040_remove_image_from_bulletin.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20231208191508_create_active_storage_tables.active_storage.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20231209073239_add_admin_to_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20231209073239_add_admin_to_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/web/admin/categories_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/admin/categories_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/web/auth_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/auth_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/bulletins.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/bulletins.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +79,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eskovdmt/Documents/projects/hexlet/notice-board/rails-project-65/app/views/web/admin/bulletins&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eskovdmt/Documents/projects/hexlet/notice-board/rails-project-65/config/locales/ru/views/web/profile&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -56,21 +93,21 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/locales/ru/views/web/profile" />
       <recent name="$PROJECT_DIR$/app/views/web/admin/bulletins" />
       <recent name="$PROJECT_DIR$/app/controllers/web/admin" />
       <recent name="$PROJECT_DIR$/app/controllers/admin" />
       <recent name="$PROJECT_DIR$/app/controllers/api" />
-      <recent name="$PROJECT_DIR$/app/controllers/web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/locales" />
+      <recent name="$PROJECT_DIR$/config/locales/ru/views" />
+      <recent name="$PROJECT_DIR$/config/locales/web/shared" />
+      <recent name="$PROJECT_DIR$/config/locales/web" />
       <recent name="$PROJECT_DIR$/app/views/web/admin/home" />
-      <recent name="$PROJECT_DIR$/app/controllers/web" />
-      <recent name="$PROJECT_DIR$/app/policies/web/admin" />
-      <recent name="$PROJECT_DIR$/app/views/web/bulletin" />
-      <recent name="$PROJECT_DIR$/test/fixtures/files" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_should_be_create_category_if_user_admin">
     <configuration name="init-env" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="init-env" workingDirectory="" arguments="">
         <envs />
@@ -97,8 +134,70 @@
       <RACK_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method v="2" />
     </configuration>
+    <configuration name="AuthControllerTest" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
+      <module name="rails-project-65" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/controllers/web/auth_controller_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPTS_PATHS" VALUE="$MODULE_DIR$/test/controllers/web/auth_controller_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="^Web::AuthControllerTest(#|::)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_should_be_create_category_if_user_admin" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
+      <module name="rails-project-65" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/controllers/web/admin/categories_controller_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPTS_PATHS" VALUE="$MODULE_DIR$/test/controllers/web/admin/categories_controller_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="^test_should_be_create_category_if_user_admin$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_should_be_create_category_if_user_admin" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.AuthControllerTest" />
         <item itemvalue="Makefile Target.init-env" />
       </list>
     </recent_temporary>
@@ -122,7 +221,12 @@
       <workItem from="1702200439787" duration="2446000" />
       <workItem from="1702230950399" duration="1564000" />
       <workItem from="1702317299343" duration="11345000" />
-      <workItem from="1702402943082" duration="15104000" />
+      <workItem from="1702402943082" duration="17191000" />
+      <workItem from="1702678711592" duration="4447000" />
+      <workItem from="1702717346212" duration="11185000" />
+      <workItem from="1702758393999" duration="15244000" />
+      <workItem from="1702823603152" duration="3506000" />
+      <workItem from="1702902570233" duration="11815000" />
     </task>
     <servers />
   </component>
@@ -139,5 +243,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/rails_project_65@test_should_be_create_category_if_user_admin.rcov" NAME="test_should_be_create_category_if_user_admin Coverage Results" MODIFIED="1702938204100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-project-65" />
+    <SUITE FILE_PATH="coverage/rails_project_65@AuthControllerTest.rcov" NAME="AuthControllerTest Coverage Results" MODIFIED="1702936909169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rails-project-65" />
   </component>
 </project>

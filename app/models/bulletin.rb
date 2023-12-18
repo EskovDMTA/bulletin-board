@@ -4,6 +4,13 @@ class Bulletin < ApplicationRecord
   include AASM
   include ActionView::Helpers::DateHelper
 
+  mount_uploader :image, BulletinUploader
+
+  belongs_to :user, inverse_of: :bulletins, optional: false
+  belongs_to :category, inverse_of: :bulletins, optional: false
+
+  validates :title, :description, :image, presence: true
+
   aasm column: 'state' do
     state :draft, initial: true
     state :under_moderation
@@ -27,22 +34,6 @@ class Bulletin < ApplicationRecord
       transitions to: :archived
     end
   end
-  belongs_to :user, inverse_of: :bulletins, optional: false
-  belongs_to :category, inverse_of: :bulletins, optional: false
-
-  has_one_attached :image do |attachable|
-    attachable.variant :bulletin_image, resize_to_limit: [300, 300]
-  end
-
-  validates :title, :description, :image, presence: true
-  validate :check_image_size
-
-  def check_image_size
-    return unless image.blob.byte_size > 5.megabytes
-
-    errors.add(:image, 'image should be less than 5MB')
-    image.purge
-  end
 
   def self.ransackable_associations(_auth_object = nil)
     %w[category image_attachment image_blob user]
@@ -62,5 +53,32 @@ class Bulletin < ApplicationRecord
 
   def self.states
     @states ||= aasm.states.map(&:name)
+  end
+
+  def self.state_options
+    {
+      'Черновик' => 'draft',
+      'На модерации' => 'under_moderation',
+      'Опубликовано' => 'published',
+      'Возвращено' => 'rejected',
+      'В архиве' => 'archived'
+    }
+  end
+
+  def state_label
+    case state.to_sym
+    when :draft
+      'Черновик'
+    when :under_moderation
+      'На модерации'
+    when :published
+      'Опубликовано'
+    when :rejected
+      'Возвращено'
+    when :archived
+      'В архиве'
+    else
+      'Unknown'
+    end
   end
 end

@@ -1,5 +1,5 @@
 h1
-  | Bulletins
+  = t('home_page.page_title')
 hr
 = render partial: 'web/shared/home_search', locals: { q: @q, url: root_path }
 = render partial: 'web/shared/bulletins', locals: { bulletins: @bulletins }

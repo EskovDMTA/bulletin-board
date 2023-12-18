@@ -1,2 +1,4 @@
-h1 Create new category
-= render 'form'
+.col-md-9
+  h1.h2.mb-4
+    = t('categories.new.page_title')
+  = render 'form', url: admin_categories_path

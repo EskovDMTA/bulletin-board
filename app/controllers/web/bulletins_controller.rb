@@ -3,7 +3,9 @@
 module Web
   class BulletinsController < Web::ApplicationController
     before_action :authorize_bulletin, only: %i[new create]
-    before_action :set_bulletin, only: %i[update destroy submit_for_moderation archive]
+    before_action :set_bulletin, only: %i[update destroy show edit submit_for_moderation archive]
+
+    def show; end
 
     def new
       user = User.find(session[:user_id])
@@ -11,21 +13,23 @@ module Web
       authorize @bulletin
     end
 
+    def edit; end
+
     def create
       @bulletin = Bulletin.new(bulletin_params)
       @bulletin.user = current_user
       if @bulletin.save
         redirect_to root_path, notice: 'Bulletin was successfully created!'
       else
-        render :new
+        render :new, status: :unprocessable_entity, alert: 'Error'
       end
     end
 
     def update
       if @bulletin.update(bulletin_params)
-        redirect_to @bulletin, notice: 'Bulletin was successfully updated.'
+        redirect_to @bulletin, flash[:notice] => 'Bulletin was successfully updated.'
       else
-        render :edit
+        render :edit, status: :unprocessable_entity, flash[:alert] => 'Error'
       end
     end
 
@@ -54,11 +58,6 @@ module Web
       params.require(:bulletin).permit(:title, :description, :image, :category_id)
     end
 
-    # def check_user_authenticate
-    #   return unless session[:user_id].nil?
-    #
-    #   redirect_to root_path, notice: 'Need authorize'
-    # end
     def authorize_bulletin
       authorize Bulletin
     end

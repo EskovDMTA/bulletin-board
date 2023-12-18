@@ -11,9 +11,7 @@ html.h-100
 
   body.d-flex.flex-column.h-100
     = render partial: 'web/shared/header'
-    - if notice
-      h1
-        = notice
+    = render partial: 'web/shared/notice', locals: { notice: }
 
     main.container
       .row
