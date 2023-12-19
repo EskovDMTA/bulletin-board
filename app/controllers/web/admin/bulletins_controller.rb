@@ -25,19 +25,17 @@ module Web
 
       def publish
         @bulletin.approve!
-        # bulletin = Bulletin.find(params[:id])
-        # bulletin.approve!
-        redirect_to bulletin, notice: 'Bulletin approved and published.'
+        redirect_to bulletin, notice: t('bulletin_notice.publish')
       end
 
       def reject
         @bulletin.reject!
-        redirect_to @bulletin, notice: 'Bulletin rejected. Requires further modifications.'
+        redirect_to @bulletin, notice: t('bulletin_notice.reject')
       end
 
       def archive
         @bulletin.archive!
-        redirect_to @bulletin, notice: 'Bulletin archived.'
+        redirect_to @bulletin, notice: t('bulletin_notice.archive')
       end
 
       private

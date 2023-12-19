@@ -9,9 +9,8 @@ ru:
         other: "%{count} минут"
       x_days:
         one: "%{count} день"
-        few: "%{count} дня"
         many: "%{count} дней"
-        other: "%{count} дней"
+        other: "%{count} дня"
 
   bulletins:
     add: 'Добавить объявление'
@@ -56,8 +55,18 @@ ru:
       category:
         create: "Создать категорию"
         update: "Обновить категорию"
+      bulletin:
+        create: "Создать объявление"
+        update: "Сохранить объявление"
 
   activerecord:
     attributes:
       category:
         name: 'Название'
+      bulletin:
+        title: 'Название'
+        description: 'Описание'
+        category: 'Категория'
+        image: 'Фотография'
+
+

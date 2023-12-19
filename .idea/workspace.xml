@@ -9,45 +9,35 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/categories_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/home_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/bulletin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bulletin.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/bulletin_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/bulletin_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/admin.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/admin.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/_form.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/destroy.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/destroy.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/new.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/uploaders/bulletin_uploader.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/web/bulletins/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/bulletins/_form.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/bulletins/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/bulletins/new.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/home_page/home.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/home_page/home.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/bulletins/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/bulletins/show.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/web/shared/_bulletins.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_bulletins.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_footer.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_footer.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_header.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_header.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_home_search.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_home_search.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_navbar.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_navbar.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_profile_search.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_profile_search.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/bulletin.en.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/policies.en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/policies.en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20231207185745_create_bulletins.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20231207185745_create_bulletins.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20231208191040_remove_image_from_bulletin.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20231208191508_create_active_storage_tables.active_storage.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20231209073239_add_admin_to_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20231209073239_add_admin_to_users.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/web/admin/categories_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/admin/categories_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/web/auth_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/auth_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/bulletins.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/bulletins.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/bulletin/image/1/c7a2dfef3ee9036fdf29ef3d4acbaddd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/bulletin/image/1/d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/bulletin/image/1/preview_update_image_c7a2dfef3ee9036fdf29ef3d4acbaddd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/bulletin/image/1/preview_update_image_d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/bulletin/image/2/d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/bulletin/image/2/preview_update_image_d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702737960-142544037606370-0001-8510/d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702737960-142544037606370-0001-8510/preview_update_image_d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702738148-474787703170400-0001-1477/d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702738148-474787703170400-0001-1477/preview_update_image_d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702738150-484481733071799-0002-6223/d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702738150-484481733071799-0002-6223/preview_update_image_d3d7d5d2-1168-4421-90e8-0115f08e6f58-GTY_1348352137.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702738160-594214989711085-0003-8583/c7a2dfef3ee9036fdf29ef3d4acbaddd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702738160-594214989711085-0003-8583/preview_update_image_c7a2dfef3ee9036fdf29ef3d4acbaddd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702759232-544994645497168-0001-8682/c7a2dfef3ee9036fdf29ef3d4acbaddd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1702759232-544994645497168-0001-8682/preview_update_image_c7a2dfef3ee9036fdf29ef3d4acbaddd.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +216,7 @@
       <workItem from="1702717346212" duration="11185000" />
       <workItem from="1702758393999" duration="15244000" />
       <workItem from="1702823603152" duration="3506000" />
-      <workItem from="1702902570233" duration="11815000" />
+      <workItem from="1702902570233" duration="19360000" />
     </task>
     <servers />
   </component>

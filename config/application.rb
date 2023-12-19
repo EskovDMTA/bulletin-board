@@ -4,6 +4,7 @@ require_relative 'boot'
 require 'dotenv/load'
 ENV['RANSACK_FORM_BUILDER'] = '::SimpleForm::FormBuilder'
 require 'rails/all'
+require 'mini_magick'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -13,8 +14,8 @@ module RailsProject65
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
-    config.active_storage.variant_processor = :mini_magick
     config.i18n.default_locale = :ru
+    config.active_storage.variant_processor = :MiniMagick
 
     # Configuration for the application, engines, and railties goes here.
     #

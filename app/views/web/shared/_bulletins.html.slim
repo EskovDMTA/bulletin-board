@@ -2,7 +2,7 @@
   - bulletins.each do |bulletin|
     .col-3.pt-2
       .card.shadow-sm
-        = image_tag bulletin.image.url, class: 'card-img-top x-object-fit-cover', style: 'height: 200px;'
+        = image_tag bulletin.image, class: 'card-img-top x-object-fit-cover', style: 'height: 200px;'
         .card-body
           = link_to bulletin_path(bulletin) do
             h5.card-title

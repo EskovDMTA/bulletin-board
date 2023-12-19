@@ -4,7 +4,7 @@ class Bulletin < ApplicationRecord
   include AASM
   include ActionView::Helpers::DateHelper
 
-  mount_uploader :image, BulletinUploader
+  has_one_attached :image
 
   belongs_to :user, inverse_of: :bulletins, optional: false
   belongs_to :category, inverse_of: :bulletins, optional: false

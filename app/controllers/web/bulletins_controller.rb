@@ -3,7 +3,7 @@
 module Web
   class BulletinsController < Web::ApplicationController
     before_action :authorize_bulletin, only: %i[new create]
-    before_action :set_bulletin, only: %i[update destroy show edit submit_for_moderation archive]
+    before_action :set_bulletin, only: %i[update show edit submit_for_moderation archive]
 
     def show; end
 
@@ -19,7 +19,7 @@ module Web
       @bulletin = Bulletin.new(bulletin_params)
       @bulletin.user = current_user
       if @bulletin.save
-        redirect_to root_path, notice: 'Bulletin was successfully created!'
+        redirect_to root_path, notice: t('bulletin_notice.create')
       else
         render :new, status: :unprocessable_entity, alert: 'Error'
       end
@@ -27,25 +27,20 @@ module Web
 
     def update
       if @bulletin.update(bulletin_params)
-        redirect_to @bulletin, flash[:notice] => 'Bulletin was successfully updated.'
+        redirect_to @bulletin, notice: t('bulletin_notice.update')
       else
-        render :edit, status: :unprocessable_entity, flash[:alert] => 'Error'
+        render :edit, status: :unprocessable_entity, notice: 'Ошибка'
       end
-    end
-
-    def destroy
-      @bulletin.destroy
-      redirect_to bulletins_url, notice: 'Bulletin was successfully destroyed.'
     end
 
     def submit_for_moderation
       @bulletin.submit_for_moderation!
-      redirect_to @bulletin, notice: 'Bulletin submitted for moderation.'
+      redirect_to @bulletin, notice: t('bulletin_notice.moderate')
     end
 
     def archive
       @bulletin.archive!
-      redirect_to @bulletin, notice: 'Bulletin archived.'
+      redirect_to @bulletin, notice: t('bulletin_notice.archive')
     end
 
     private

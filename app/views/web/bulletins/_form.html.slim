@@ -1,27 +1,9 @@
 = simple_form_for @bulletin, html: { class: 'form', multipart: true } do |f|
-  - if @bulletin.errors.any?
-    .alert.alert-danger
-      h2= "#{pluralize(@bulletin.errors.count, 'error')} prohibited this bulletin from being saved:"
-      ul
-        - @bulletin.errors.full_messages.each do |message|
-          li= message
+  = f.input :title
+  = f.input :description, as: :text
+  = f.association :category, required: true, collection: Category.all, selected: @bulletin.category_id
+  - if @bulletin.image.attached?
+    = image_tag @bulletin.image.variant(resize_to_limit: [100, 100]), class: 'img-thumbnail mb-2'
+  = f.input :image, as: :file
 
-  .form-group.mb-3.string.required.bulletin_title
-    = f.input :title, label: t('create_bulletin.title'), input_html: { class: 'form-control' }
-
-  .form-group.mb-3.text.required.bulletin_description
-    = f.input :description, as: :text, label: t('create_bulletin.description'), input_html: { class: 'form-control' }
-
-  .form-group.mb-3.select.required.bulletin_category
-    = f.label :category_id, t('create_bulletin.category'), class: 'required'
-    = f.collection_select :category_id, Category.all, :id, :name, { prompt: t('create_bulletin.category_placeholder') },
-{ class: 'form-control' }
-
-  .form-group.file.required.bulletin_image
-    - if @bulletin.image.present?
-      div
-        = image_tag @bulletin.image.preview_update_image.url, class: 'img-thumbnail mb-2'
-    = f.label :image, t('create_bulletin.image'), class: 'required'
-    = f.input :image, label: false, as: :file, input_html: { class: 'form-control-file' }
-
-  = f.button :submit, t('create_bulletin.create_button'), class: 'mt-4 btn btn-primary', data: { turbo: false }
+  = f.button :submit, class: 'btn btn-primary'

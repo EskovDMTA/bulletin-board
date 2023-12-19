@@ -5,11 +5,9 @@ one:
   description: Batman from night
   user: one
   category: three
-  image: test/fixtures/files/lamp.png
 
 two:
   title: Alien
   description: Alien from alien
   user: two
   category: one
-  image: test/fixtures/files/lamp.png
