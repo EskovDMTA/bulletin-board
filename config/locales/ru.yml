@@ -5,8 +5,11 @@ ru:
         one: "около часа"
         other: "около %{count} часов"
       x_minutes:
-        one: "%{count} минуту"
-        other: "%{count} минут"
+        one: "%{count} минутa"
+        other: "%{count} минуты"
+      less_than_x_minutes:
+        one: "меньше 1 минуты"
+        other: "меньше %{count} минут"
       x_days:
         one: "%{count} день"
         many: "%{count} дней"
@@ -16,8 +19,11 @@ ru:
     add: 'Добавить объявление'
     show: "Показать"
     edit: "Редактировать"
-    submit_for_moderation: "Отправить на модерацию"
-    archive: "В архив"
+
+    submit_publish: 'Опубликовать'
+    submit_reject: 'Вернуть'
+    submit_moderation: "Отправить на модерацию"
+    submit_archive: "В архив"
 
   create_bulletin:
     page_title: 'Добавить объявление'

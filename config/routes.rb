@@ -20,9 +20,9 @@ Rails.application.routes.draw do
       resources :bulletins, only: :index do
         member do
           post :approve
-          post :archive
-          post :publish
-          post :reject
+          patch :archive
+          patch :publish
+          patch :reject
         end
       end
       resources :categories

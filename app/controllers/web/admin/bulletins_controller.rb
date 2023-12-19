@@ -25,17 +25,17 @@ module Web
 
       def publish
         @bulletin.approve!
-        redirect_to bulletin, notice: t('bulletin_notice.publish')
+        redirect_to admin_bulletins_path, notice: t('bulletin_notice.publish')
       end
 
       def reject
         @bulletin.reject!
-        redirect_to @bulletin, notice: t('bulletin_notice.reject')
+        redirect_to admin_bulletins_path, notice: t('bulletin_notice.reject')
       end
 
       def archive
         @bulletin.archive!
-        redirect_to @bulletin, notice: t('bulletin_notice.archive')
+        redirect_to admin_bulletins_path, notice: t('bulletin_notice.archive')
       end
 
       private

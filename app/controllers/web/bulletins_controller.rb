@@ -19,7 +19,7 @@ module Web
       @bulletin = Bulletin.new(bulletin_params)
       @bulletin.user = current_user
       if @bulletin.save
-        redirect_to root_path, notice: t('bulletin_notice.create')
+        redirect_to profile_index_path, notice: t('bulletin_notice.create')
       else
         render :new, status: :unprocessable_entity, alert: 'Error'
       end
@@ -27,7 +27,7 @@ module Web
 
     def update
       if @bulletin.update(bulletin_params)
-        redirect_to @bulletin, notice: t('bulletin_notice.update')
+        redirect_to profile_index_path, notice: t('bulletin_notice.update')
       else
         render :edit, status: :unprocessable_entity, notice: 'Ошибка'
       end
@@ -35,12 +35,12 @@ module Web
 
     def submit_for_moderation
       @bulletin.submit_for_moderation!
-      redirect_to @bulletin, notice: t('bulletin_notice.moderate')
+      redirect_to profile_index_path, notice: t('bulletin_notice.moderate')
     end
 
     def archive
       @bulletin.archive!
-      redirect_to @bulletin, notice: t('bulletin_notice.archive')
+      redirect_to profile_index_path, notice: t('bulletin_notice.archive')
     end
 
     private
