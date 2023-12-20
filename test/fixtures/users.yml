@@ -8,7 +8,9 @@ two:
   email: MyString
   name: MyString
 
-three:
-  email: MyString
-  name: MyString
+admin:
+  provider: github
+  uid: 2
+  name: admin
+  email: admin@mail.ru
   admin: true

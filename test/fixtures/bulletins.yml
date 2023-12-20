@@ -11,3 +11,10 @@ two:
   description: Alien from alien
   user: two
   category: one
+
+three:
+  title: Alien
+  description: Alien from alien
+  user: two
+  category: one
+  state: "draft"
