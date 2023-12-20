@@ -4,8 +4,7 @@
 
 - if @category.errors.any?
   .alert.alert-danger
-    h2= "#{pluralize(@category.errors.count, 'error')} prohibited this bulletin from being saved:"
+    h2 = "#{pluralize(@category.errors.count, 'error')} prohibited this bulletin from being saved:"
     ul
       - @category.errors.full_messages.each do |message|
-        li= message
-
+        li = message

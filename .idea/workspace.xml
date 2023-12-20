@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/admin.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/admin.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/bulletins/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/bulletins/_form.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/_form.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +190,7 @@
       <workItem from="1702717346212" duration="11185000" />
       <workItem from="1702758393999" duration="15244000" />
       <workItem from="1702823603152" duration="3506000" />
-      <workItem from="1702902570233" duration="25650000" />
+      <workItem from="1702902570233" duration="26531000" />
     </task>
     <servers />
   </component>
