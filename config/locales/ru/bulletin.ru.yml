@@ -1,19 +1,17 @@
 ru:
-  datetime:
-    distance_in_words:
-      about_x_hours:
-        one: "около часа"
-        other: "около %{count} часов"
-      x_minutes:
-        one: "%{count} минутa"
-        other: "%{count} минуты"
-      less_than_x_minutes:
-        one: "меньше 1 минуты"
-        other: "меньше %{count} минут"
-      x_days:
-        one: "%{count} день"
-        many: "%{count} дней"
-        other: "%{count} дня"
+  activerecord:
+    attributes:
+      bulletin:
+        state_draft: "Черновик"
+        state_under_moderation: "На модерации"
+        state_published: "Опубликовано"
+        state_rejected: "Возвращено"
+        state_archived: "В архиве"
+
+        title: 'Название'
+        description: 'Описание'
+        category: 'Категория'
+        image: 'Фотография'
 
   bulletins:
     add: 'Добавить объявление'
@@ -45,34 +43,8 @@ ru:
     action_to_moderate: 'На модерацию'
     action_to_archive: 'В архив'
 
-  authentication:
-    logout: 'Успешно'
-    login: 'Успешно'
-
-  categories:
-    new:
-      page_title: 'Новая категория'
-    update:
-      page_title: 'Обновить категорию'
-
-
   helpers:
     submit:
-      category:
-        create: "Создать категорию"
-        update: "Обновить категорию"
       bulletin:
         create: "Создать объявление"
         update: "Сохранить объявление"
-
-  activerecord:
-    attributes:
-      category:
-        name: 'Название'
-      bulletin:
-        title: 'Название'
-        description: 'Описание'
-        category: 'Категория'
-        image: 'Фотография'
-
-

@@ -1,0 +1,25 @@
+ru:
+  activerecord:
+    attributes:
+      category:
+        name: 'Название'
+
+  category:
+    table_id: 'ID'
+    table_name: 'Название'
+    table_actions: 'Действия'
+
+    title_page: 'Категории'
+    add_category: 'Добавить категорию'
+
+  categories:
+    new:
+      page_title: 'Новая категория'
+    update:
+      page_title: 'Обновить категорию'
+
+  helpers:
+    submit:
+      category:
+        create: "Создать категорию"
+        update: "Обновить категорию"

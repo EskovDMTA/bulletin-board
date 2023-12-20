@@ -1,8 +1,0 @@
-ru:
-  category:
-    table_id: 'ID'
-    table_name: 'Название'
-    table_actions: 'Действия'
-
-    title_page: 'Категории'
-    add_category: 'Добавить категорию'

@@ -1,0 +1,20 @@
+ru:
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "около часа"
+        other: "около %{count} часов"
+      x_minutes:
+        one: "%{count} минутa"
+        other: "%{count} минуты"
+      less_than_x_minutes:
+        one: "меньше 1 минуты"
+        other: "меньше %{count} минут"
+      x_days:
+        one: "%{count} день"
+        many: "%{count} дней"
+        other: "%{count} дня"
+
+  authentication:
+    logout: 'Успешно'
+    login: 'Успешно'
