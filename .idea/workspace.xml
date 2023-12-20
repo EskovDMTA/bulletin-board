@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/profile_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/profiles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/profiles/show.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_header.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_header.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/ru/views/web/profile/profile.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru/views/web/profiles/profiles.ru.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +59,11 @@
       <recent name="$PROJECT_DIR$/app/controllers/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/web/bulletins" />
       <recent name="$PROJECT_DIR$/config/locales" />
       <recent name="$PROJECT_DIR$/config/locales/ru/views" />
       <recent name="$PROJECT_DIR$/config/locales/web/shared" />
       <recent name="$PROJECT_DIR$/config/locales/web" />
-      <recent name="$PROJECT_DIR$/app/views/web/admin/home" />
     </key>
   </component>
   <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_should_be_create_category_if_user_admin">
@@ -190,7 +185,7 @@
       <workItem from="1702717346212" duration="11185000" />
       <workItem from="1702758393999" duration="15244000" />
       <workItem from="1702823603152" duration="3506000" />
-      <workItem from="1702902570233" duration="24672000" />
+      <workItem from="1702902570233" duration="25650000" />
     </task>
     <servers />
   </component>
