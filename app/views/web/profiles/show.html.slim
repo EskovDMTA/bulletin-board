@@ -1,8 +1,8 @@
 h1
-  =t('profile.page_title')
+  =t('profiles.page_title')
 hr
 = link_to t('bulletins.add'), new_bulletin_path
-= render partial: 'web/shared/profile_search', locals: { q: @q, url: profile_index_path }
+= render partial: 'web/shared/profile_search', locals: { q: @q, url: profile_path }
 .row.mt-2
   table.table.table-borderless
     thead

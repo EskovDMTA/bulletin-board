@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/home_page_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/home_page_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/notice.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/notice.ru.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/profile_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/profiles_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/profile/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/profiles/show.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_header.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_header.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/ru/views/web/profile/profile.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru/views/web/profiles/profiles.ru.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +190,7 @@
       <workItem from="1702717346212" duration="11185000" />
       <workItem from="1702758393999" duration="15244000" />
       <workItem from="1702823603152" duration="3506000" />
-      <workItem from="1702902570233" duration="22578000" />
+      <workItem from="1702902570233" duration="24672000" />
     </task>
     <servers />
   </component>

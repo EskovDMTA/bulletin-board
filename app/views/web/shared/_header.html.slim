@@ -8,7 +8,7 @@
             = link_to t('main_page'), root_path, class: 'nav-link text-dark'
           li.nav-item.me-2
             - if current_user
-              = link_to t('my_bulletin'), profile_index_path, class: 'nav-link text-dark'
+              = link_to t('my_bulletin'), profile_path, class: 'nav-link text-dark'
               li.nav-item.me-2
                 a.nav-link.text-dark[href="/bulletins/new"]
                   = t('add_bulletin')

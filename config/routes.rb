@@ -3,17 +3,17 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   scope module: 'web' do
-    root 'home_page#home'
+    root 'bulletins#index'
     post 'auth/:provider', to: 'auth#request', as: :auth_request
     delete 'auth/logout', to: 'auth#destroy'
     get 'auth/:provider/callback', to: 'auth#callback', as: :callback_auth
     resources :bulletins, except: %i[destroy] do
       member do
         post :submit_for_moderation
-        post :archive
+        patch :archive
       end
     end
-    resources :profile, only: %i[index]
+    resource :profile, only: %i[show]
 
     namespace :admin do
       root 'home#index'
