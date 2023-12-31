@@ -28,11 +28,11 @@ module Web
       end
 
       test 'should create bulletin' do
-        assert_difference('Bulletin.count') do
-          post bulletins_path, params: { bulletin: { title: 'New Bulletin', description: 'Description',
-                                                     category_id: @category.id,
-                                                     image: fixture_file_upload('lamp.png', 'image/png') } }
-        end
+        post bulletins_path, params: { bulletin: { title: 'New Bulletin', description: 'Description',
+                                                   category_id: @category.id,
+                                                   image: fixture_file_upload('lamp.png', 'image/png') } }
+        @new_bulletin = Bulletin.find_by(title: 'New Bulletin')
+        assert(@new_bulletin)
       end
 
       test 'should get edit' do
