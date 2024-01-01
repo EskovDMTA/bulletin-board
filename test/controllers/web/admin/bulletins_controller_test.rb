@@ -28,11 +28,14 @@ module Web
       end
 
       test 'should create bulletin' do
-        post bulletins_path, params: { bulletin: { title: 'New Bulletin', description: 'Description',
-                                                   category_id: @category.id,
-                                                   image: fixture_file_upload('test/fixtures/files//lamp.png',
-                                                                              'image/png') } }
+        post bulletins_path, params: { bulletin:
+                                         { title: 'New Bulletin',
+                                           description: 'Description',
+                                           category_id: @category.id,
+                                           image: fixture_file_upload(Rails.root.join('test/fixtures/files/lamp.png'),
+                                                                      'image/png') } }
         @new_bulletin = Bulletin.find_by(title: 'New Bulletin')
+        puts @new_bulletin
         assert(@new_bulletin)
       end
 
