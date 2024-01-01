@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'boot'
-require 'dotenv/load'
+# require 'dotenv/load'
 ENV['RANSACK_FORM_BUILDER'] = '::SimpleForm::FormBuilder'
 require 'rails/all'
 require 'mini_magick'
@@ -13,7 +13,7 @@ Bundler.require(*Rails.groups)
 module RailsProject65
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.1
+    config.load_defaults 7.0
     config.i18n.default_locale = :ru
     config.active_storage.variant_processor = :MiniMagick
 
