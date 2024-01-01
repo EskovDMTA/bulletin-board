@@ -1,24 +1,25 @@
-# README
+# Bulletin Board
+[![hexlet-check](https://github.com/EskovDMTA/rails-project-65/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/EskovDMTA/rails-project-65/actions/workflows/hexlet-check.yml)
+[![BB](https://github.com/EskovDMTA/rails-project-65/actions/workflows/custom-build.yml/badge.svg)](https://github.com/EskovDMTA/rails-project-65/actions/workflows/custom-build.yml)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Deploy: https://bulletin-board-um6z.onrender.com
 
-Things you may want to cover:
+Bulletin Board is a web service that serves as an alternative to platforms like Avito. Users can create and browse classified ads, respond to listings, and communicate with sellers. Each ad undergoes pre-moderation by service administrators. Administrators have the ability to return ads for revision, publish them, or move them to the archive.
 
-* Ruby version
+## Setup
 
-* System dependencies
+To set up the project locally, follow these steps:
 
-* Configuration
+1. **Install Dependencies:**
+   ```bash
+   make setup
 
-* Database creation
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+1. **Run the Application::**
+   ```bash
+   bin/rails server
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Access the Application:
+Open your web browser and go to http://localhost:3000.
