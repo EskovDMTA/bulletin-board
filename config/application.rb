@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'boot'
-# require 'dotenv/load'
+require 'dotenv/load'
 ENV['RANSACK_FORM_BUILDER'] = '::SimpleForm::FormBuilder'
 require 'rails/all'
 require 'mini_magick'
