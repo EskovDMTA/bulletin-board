@@ -35,7 +35,6 @@ module Web
                                            image: fixture_file_upload(Rails.root.join('test/fixtures/files/lamp.png'),
                                                                       'image/png') } }
         @new_bulletin = Bulletin.find_by(title: 'New Bulletin')
-        puts @new_bulletin
         assert(@new_bulletin)
       end
 
