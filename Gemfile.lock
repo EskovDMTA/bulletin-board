@@ -369,7 +369,7 @@ DEPENDENCIES
   pg
   puma (~> 5.0)
   pundit
-  rails (= 7.0.1)
+  rails (~> 7.0.1)
   ransack
   rollbar
   rubocop
