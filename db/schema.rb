@@ -41,8 +41,8 @@ ActiveRecord::Schema.define(version: 2023_12_19_153659) do
   end
 
   create_table "bulletins", force: :cascade do |t|
-    t.string "title", limit: 50, null: false
-    t.string "description", limit: 1000, null: false
+    t.string "title", null: false
+    t.text "description", null: false
     t.integer "user_id", null: false
     t.integer "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 2023_12_19_153659) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
-    t.boolean "admin", default: true, null: false
+    t.boolean "admin", default: false, null: false
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

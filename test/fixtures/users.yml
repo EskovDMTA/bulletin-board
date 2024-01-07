@@ -3,13 +3,14 @@
 one:
   email: MyString
   name: MyString
+  admin: true
 
 two:
-  email: MyString
+  email: MyString2
   name: MyString
 
 admin:
-  provider: github
+  provider: :github
   uid: 2
   name: admin
   email: admin@mail.ru

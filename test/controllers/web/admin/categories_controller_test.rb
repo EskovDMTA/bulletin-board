@@ -8,6 +8,7 @@ module Web
       setup do
         @category = categories(:one)
         @user = users(:one)
+        sign_in(@user)
       end
 
       test 'should be redirected if the user is not an admin' do
@@ -25,8 +26,6 @@ module Web
       end
 
       test 'admin should be get category routes' do
-        sign_in(@user)
-
         get admin_categories_path
         assert_response :success
 
@@ -38,16 +37,14 @@ module Web
       end
 
       test 'admin should be create category' do
-        sign_in(@user)
-        post admin_categories_path, params: { category: { name: 'Новая категория' } }
-
+        puts current_user.signed_in?
+        post admin_categories_url, params: { category: { name: 'Новая категория' } }
         assert(Category.find_by(name: 'Новая категория'))
       end
 
       test 'admin should be destroy category' do
-        sign_in(@user)
-        delete admin_category_path(@category)
-        assert_nil(Category.find_by(name: 'Alien'))
+        delete admin_category_url(@category)
+        assert_nil(Category.find_by(name: @category.name))
       end
     end
   end
