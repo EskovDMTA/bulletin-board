@@ -28,7 +28,7 @@ hr
             = link_to t('bulletins.show'), bulletin_path(bulletin), class: 'me-2'
             = link_to t('bulletins.edit'), edit_bulletin_path(bulletin), class: 'me-2'
             - if bulletin.state == 'draft'
-              = link_to t('bulletins.submit_for_moderation'), submit_for_moderation_bulletin_path(bulletin),
+              = link_to t('bulletins.submit_moderation'), submit_for_moderation_bulletin_path(bulletin),
                       data: { turbo_method: :post }, class: 'me-2'
             - if bulletin.state != 'archived'
               = link_to t('bulletins.submit_archive'), archive_bulletin_path(bulletin), data: { turbo_method: :post,
