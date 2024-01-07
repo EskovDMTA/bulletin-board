@@ -39,17 +39,15 @@ module Web
 
       test 'admin should be create category' do
         sign_in(@user)
+        post admin_categories_path, params: { category: { name: 'Новая категория' } }
 
-        assert_difference('Category.count') do
-          post admin_categories_path, params: { category: { name: 'Новая категория' } }
-        end
+        assert(Category.find_by(name: 'Новая категория'))
       end
 
       test 'admin should be destroy category' do
         sign_in(@user)
-        assert_difference('Category.count', -1) do
-          delete admin_category_path(@category)
-        end
+        delete admin_category_path(@category)
+        assert_nil(Category.find_by(name: 'Alien'))
       end
     end
   end
