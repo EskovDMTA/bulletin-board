@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_19_153659) do
+ActiveRecord::Schema.define(version: 2023_12_19_153659) do
+
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
     t.bigint "record_id", null: false
     t.bigint "blob_id", null: false
-    t.datetime "created_at", null: false
+    t.datetime "created_at", precision: 6, null: false
     t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
     t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
   end
@@ -29,7 +30,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_19_153659) do
     t.string "service_name", null: false
     t.bigint "byte_size", null: false
     t.string "checksum"
-    t.datetime "created_at", null: false
+    t.datetime "created_at", precision: 6, null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
@@ -44,8 +45,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_19_153659) do
     t.string "description", limit: 1000, null: false
     t.integer "user_id", null: false
     t.integer "category_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "state", default: "draft", null: false
     t.index ["category_id"], name: "index_bulletins_on_category_id"
     t.index ["user_id"], name: "index_bulletins_on_user_id"
@@ -53,15 +54,15 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_19_153659) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "email"
     t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
     t.boolean "admin", default: true, null: false

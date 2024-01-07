@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/rails-project-65.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-project-65.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/bulletin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bulletin.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20231209073239_add_admin_to_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20231209073239_add_admin_to_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +280,9 @@
       <workItem from="1704061484375" duration="6299000" />
       <workItem from="1704107571721" duration="7662000" />
       <workItem from="1704139180116" duration="29000" />
-      <workItem from="1704139265518" duration="2316000" />
+      <workItem from="1704139265518" duration="2891000" />
+      <workItem from="1704463138258" duration="43000" />
+      <workItem from="1704614879417" duration="9092000" />
     </task>
     <servers />
   </component>
