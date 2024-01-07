@@ -9,12 +9,12 @@ one:
 two:
   title: Alien
   description: Alien from alien
-  user: two
+  user: one
   category: one
 
 three:
   title: Alien
   description: Alien from alien
-  user: two
+  user: one
   category: one
   state: "draft"

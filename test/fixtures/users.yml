@@ -1,17 +1,14 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  email: MyString
-  name: MyString
+  provider: "github"
+  uid: 1
+  name: one
+  email: one@example.com
   admin: true
-
-two:
-  email: MyString2
-  name: MyString
 
 admin:
-  provider: :github
+  provider: "github"
   uid: 2
-  name: admin
-  email: admin@mail.ru
-  admin: true
+  name: two
+  email: two@example.com
+  admin: false
