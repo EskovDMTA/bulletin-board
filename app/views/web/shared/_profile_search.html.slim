@@ -7,11 +7,7 @@
 
       .form-group
         = f.label :state, t('profile_search.filter_by'), class: 'mr-2'
-        = f.select :state_eq,
-                Bulletin.state_options,
-                { include_blank: '' },
-                class: 'form-control mr-2 mb-4',
-                label: false
-
+        = f.input :state_eq, as: :select, collection: Bulletin.aasm.states, value_method: :name,
+                label_method: :human_name, label: false
       = f.submit t('profile_search.search_button'), class: 'btn btn-primary me-2'
       = link_to t('profile_search.reset_button'), url, class: 'btn btn-outline-primary'

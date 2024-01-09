@@ -2,6 +2,7 @@
 
 class User < ApplicationRecord
   has_many :bulletins, dependent: :destroy
+  validates :email, presence: true
   class << self
     def create_with_omniauth(auth)
       create! do |user|
@@ -11,10 +12,6 @@ class User < ApplicationRecord
         user.email = auth['info']['email']
         user.admin = true
       end
-    end
-
-    def admin?
-      admin
     end
   end
 end

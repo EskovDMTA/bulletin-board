@@ -24,7 +24,7 @@ module Web
       end
 
       def publish
-        @bulletin.approve!
+        @bulletin.publish!
         redirect_to admin_bulletins_path, notice: t('bulletin_notice.publish')
       end
 

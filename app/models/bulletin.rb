@@ -2,7 +2,6 @@
 
 class Bulletin < ApplicationRecord
   include AASM
-  include ActionView::Helpers::DateHelper
 
   has_one_attached :image
 
@@ -23,11 +22,11 @@ class Bulletin < ApplicationRecord
     state :rejected
     state :archived
 
-    event :submit_for_moderation do
+    event :to_moderate do
       transitions from: :draft, to: :under_moderation
     end
 
-    event :approve do
+    event :publish do
       transitions from: :under_moderation, to: :published
     end
 
@@ -48,42 +47,7 @@ class Bulletin < ApplicationRecord
     %w[state title category]
   end
 
-  def formatted_created_at
-    created_at.strftime('%d %B %Y')
-  end
-
-  def time_ago
-    time_ago_in_words(created_at)
-  end
-
   def self.states
     @states ||= aasm.states.map(&:name)
-  end
-
-  def self.state_options
-    {
-      'Черновик' => 'draft',
-      'На модерации' => 'under_moderation',
-      'Опубликовано' => 'published',
-      'Возвращено' => 'rejected',
-      'В архиве' => 'archived'
-    }
-  end
-
-  def state_label
-    case state.to_sym
-    when :draft
-      'Черновик'
-    when :under_moderation
-      'На модерации'
-    when :published
-      'Опубликовано'
-    when :rejected
-      'Возвращено'
-    when :archived
-      'В архиве'
-    else
-      'Unknown'
-    end
   end
 end

@@ -3,7 +3,7 @@
 module Web
   class BulletinsController < Web::ApplicationController
     before_action :authorize_bulletin, only: %i[new create]
-    before_action :set_bulletin, only: %i[update show edit submit_for_moderation archive]
+    before_action :set_bulletin, only: %i[update show edit to_moderate archive]
 
     def index
       @q = Bulletin.where(state: :published).order(title: :desc).ransack(params[:q])
@@ -38,8 +38,8 @@ module Web
       end
     end
 
-    def submit_for_moderation
-      @bulletin.submit_for_moderation!
+    def to_moderate
+      @bulletin.to_moderate!
       redirect_to profile_path, notice: t('bulletin_notice.moderate')
     end
 

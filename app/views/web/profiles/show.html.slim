@@ -21,14 +21,15 @@ hr
           td
             = bulletin.title
           td
-            = bulletin.state_label
+            / = bulletin.state
+            = t("bulletins.states.#{bulletin.state}")
           td
             = time_ago_in_words(bulletin.created_at).to_s
           td
             = link_to t('bulletins.show'), bulletin_path(bulletin), class: 'me-2'
             = link_to t('bulletins.edit'), edit_bulletin_path(bulletin), class: 'me-2'
             - if bulletin.state == 'draft'
-              = link_to t('bulletins.submit_moderation'), submit_for_moderation_bulletin_path(bulletin),
+              = link_to t('bulletins.submit_moderation'), to_moderate_bulletin_path(bulletin),
                       data: { turbo_method: :post }, class: 'me-2'
             - if bulletin.state != 'archived'
               = link_to t('bulletins.submit_archive'), archive_bulletin_path(bulletin), data: { turbo_method: :post,

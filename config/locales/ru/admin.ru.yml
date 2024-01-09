@@ -1,7 +1,4 @@
 ru:
-  profiles:
-    page_title: 'Мои объявления'
-
   bulletins:
     states:
       draft: "Черновик"

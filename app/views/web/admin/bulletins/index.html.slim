@@ -19,8 +19,8 @@
           tr
             td
               = link_to bulletin.title, bulletin_path(bulletin)
-              td
-                = bulletin.state_label
+            td
+              = t("bulletins.states.#{bulletin.state}")
             td
               | #{time_ago_in_words(bulletin.created_at)}
             td

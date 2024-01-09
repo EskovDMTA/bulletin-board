@@ -8,12 +8,20 @@ ru:
         state_rejected: "Возвращено"
         state_archived: "В архиве"
 
+
         title: 'Название'
         description: 'Описание'
         category: 'Категория'
         image: 'Фотография'
 
         less_than: 'Размер изображение не может первышать 5MB'
+
+        state:
+          draft: "Черновик"
+          under_moderation: "На модерации"
+          published: "Опубликовано"
+          rejected: "Возвращено"
+          archived: "В архиве"
 
   bulletins:
     add: 'Добавить объявление'

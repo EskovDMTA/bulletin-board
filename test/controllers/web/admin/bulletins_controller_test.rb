@@ -50,7 +50,7 @@ module Web
       end
 
       test 'should submit bulletin for moderation' do
-        post submit_for_moderation_bulletin_path(@bulletin)
+        post to_moderate_bulletin_path(@bulletin)
         @bulletin.reload
         assert_equal('under_moderation', @bulletin.state)
       end

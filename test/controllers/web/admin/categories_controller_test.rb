@@ -10,7 +10,7 @@ module Web
         @user = users(:admin)
       end
 
-      test 'should be redirected if the user is not an admin' do
+      test 'should be redirected if the user is not an admin.ru.yml' do
         get admin_categories_path
         assert_redirected_to root_path
 
@@ -24,7 +24,7 @@ module Web
         assert_redirected_to root_path
       end
 
-      test 'admin should be get category routes' do
+      test 'admin.ru.yml should be get category routes' do
         sign_in(@user)
         get admin_categories_path
         assert_response :success
@@ -36,13 +36,13 @@ module Web
         assert_response :success
       end
 
-      test 'admin should be create category' do
+      test 'admin.ru.yml should be create category' do
         sign_in(@user)
         post admin_categories_url, params: { category: { name: 'Новая категория' } }
         assert(Category.find_by(name: 'Новая категория'))
       end
 
-      test 'admin should be destroy category' do
+      test 'admin.ru.yml should be destroy category' do
         sign_in(@user)
         delete admin_category_url(@category)
         assert_nil(Category.find_by(name: @category.name))

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     get 'auth/:provider/callback', to: 'auth#callback', as: :callback_auth
     resources :bulletins, except: %i[destroy] do
       member do
-        post :submit_for_moderation
+        post :to_moderate
         patch :archive
       end
     end
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
       root 'home#index'
       resources :bulletins, only: :index do
         member do
-          post :approve
+          post :publish
           patch :archive
           patch :publish
           patch :reject
