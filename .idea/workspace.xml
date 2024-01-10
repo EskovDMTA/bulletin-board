@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/rails-project-65.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rails-project-65.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/bulletin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bulletin.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/profiles/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/profiles/show.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_bulletins.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_bulletins.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/shared/_profile_search.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/shared/_profile_search.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/ru/bulletin.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru/bulletin.ru.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/ru/profiles.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru/profiles.ru.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/bulletins/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/bulletins/_form.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/controllers/web/admin/bulletins_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/admin/bulletins_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/web/admin/categories_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/admin/categories_controller_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +285,7 @@
       <workItem from="1704463138258" duration="43000" />
       <workItem from="1704614879417" duration="17697000" />
       <workItem from="1704645264792" duration="701000" />
-      <workItem from="1704819445853" duration="4756000" />
+      <workItem from="1704819445853" duration="6729000" />
     </task>
     <servers />
   </component>

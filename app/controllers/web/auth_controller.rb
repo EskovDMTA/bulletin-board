@@ -9,6 +9,13 @@ module Web
       redirect_to root_path, notice: t('authentication.login')
     end
 
+    def destroy
+      session[:user_id] = nil
+      redirect_to root_path, notice: t('authentication.logout')
+    end
+
+    private
+
     def create_with_omniauth(auth)
       create! do |user|
         user.provider = auth['provider']
@@ -16,11 +23,6 @@ module Web
         user.name = auth['info']['name']
         user.email = auth['info']['email']
       end
-    end
-
-    def destroy
-      session[:user_id] = nil
-      redirect_to root_path, notice: t('authentication.logout')
     end
   end
 end

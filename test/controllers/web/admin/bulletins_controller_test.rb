@@ -57,7 +57,6 @@ module Web
 
       test 'should archive bulletin' do
         assert_difference('Bulletin.archived.count') do
-          puts @user.admin
           patch archive_bulletin_path(@bulletin)
         end
 
