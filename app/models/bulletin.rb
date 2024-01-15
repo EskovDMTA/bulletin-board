@@ -8,7 +8,7 @@ class Bulletin < ApplicationRecord
   belongs_to :user, inverse_of: :bulletins, optional: false
   belongs_to :category, inverse_of: :bulletins, optional: false
 
-  validates :title, length: { minimum: 5, maximum: 50 }, presence: true
+  validates :title, length: { minimum: 2, maximum: 50 }, presence: true
   validates :description, length: { minimum: 5, maximum: 1000 }, presence: true
   validates :image, attached: true, size: {
     less_than: 5.megabytes,
