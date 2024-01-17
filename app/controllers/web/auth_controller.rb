@@ -13,5 +13,5 @@ module Web
       session[:user_id] = nil
       redirect_to root_path, notice: t('authentication.logout')
     end
-    end
+  end
 end
