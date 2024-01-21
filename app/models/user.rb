@@ -2,16 +2,5 @@
 
 class User < ApplicationRecord
   has_many :bulletins, dependent: :destroy
-  validates :email, presence: true
-  class << self
-    def create_with_omniauth(auth)
-      create! do |user|
-        user.provider = auth['provider']
-        user.uid = auth['uid']
-        user.name = auth['info']['name']
-        user.email = auth['info']['email']
-        user.admin = true
-      end
-    end
-  end
+  validates :email, presence: true, uniqueness: true
 end

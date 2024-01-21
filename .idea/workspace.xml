@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/profiles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/profiles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/bulletin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bulletin.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/web/profiles/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/profiles/show.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/web/admin/bulletins_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/bulletins_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/web/admin/categories_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/admin/categories_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
-    </list>
+    <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -386,7 +373,7 @@
       <workItem from="1705496183539" duration="36000" />
       <workItem from="1705606283034" duration="462000" />
       <workItem from="1705607382928" duration="5000" />
-      <workItem from="1705607547222" duration="13102000" />
+      <workItem from="1705607547222" duration="13540000" />
     </task>
     <servers />
   </component>
