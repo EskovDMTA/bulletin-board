@@ -17,10 +17,7 @@ class Bulletin < ApplicationRecord
 
   aasm column: 'state' do
     state :draft, initial: true
-    state :under_moderation
-    state :published
-    state :rejected
-    state :archived
+    state :under_moderation, :published, :rejected, :archived
 
     event :to_moderate do
       transitions from: :draft, to: :under_moderation
@@ -45,9 +42,5 @@ class Bulletin < ApplicationRecord
 
   def self.ransackable_attributes(_auth_object = nil)
     %w[state title category]
-  end
-
-  def self.states
-    @states ||= aasm.states.map(&:name)
   end
 end

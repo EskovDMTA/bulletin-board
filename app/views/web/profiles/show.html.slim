@@ -32,5 +32,5 @@ hr
               = link_to t('bulletins.submit_moderation'), to_moderate_bulletin_path(bulletin),
                       data: { turbo_method: :post }, class: 'me-2'
             - if bulletin.state != 'archived'
-              = link_to t('bulletins.submit_archive'), archive_bulletin_path(bulletin), data: { turbo_method: :post,
+              = link_to t('bulletins.submit_archive'), archive_bulletin_path(bulletin), data: { turbo_method: :patch,
                       turbo_confirm: t('bulletin_notice.confirm_archive') }, class: 'me-2 text-danger'

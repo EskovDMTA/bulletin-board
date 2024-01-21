@@ -4,11 +4,11 @@ one:
   uid: 1
   name: one
   email: one@example.com
-  admin: true
+  admin: false
 
 admin:
   provider: "github"
   uid: 2
   name: two
   email: two@example.com
-  admin: false
+  admin: true
