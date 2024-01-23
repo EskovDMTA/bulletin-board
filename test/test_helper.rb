@@ -24,8 +24,8 @@ module ActionDispatch
     include AuthManagement
     def sign_in(user, _options = {})
       auth_hash = {
-        provider: 'github',
-        uid: '12345',
+        provider: user.provider || 'github',
+        uid: user.uid || '1234',
         info: {
           email: user.email,
           name: user.name
