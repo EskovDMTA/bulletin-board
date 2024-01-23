@@ -22,7 +22,8 @@ module Web
         provider: auth['provider'],
         uid: auth['uid'],
         name: auth['info']['name'],
-        email: auth['info']['email']
+        email: auth['info']['email'],
+        admin: true
       }
     end
   end
