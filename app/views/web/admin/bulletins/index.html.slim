@@ -26,5 +26,6 @@
             td
               = link_to 'Показать', bulletin_path(bulletin), class: 'me-2'
               - unless bulletin.state == 'archived'
-                = link_to 'В архив', archive_bulletin_path(bulletin), data: { turbo_method: :post, confirm: 'Подтвердить архивацию' },
+                = link_to 'В архив', archive_bulletin_path(bulletin), data: { turbo_method: :patch, confirm: 'Подтвердить архивацию' },
                       class: 'me-2 text-danger'
+  = paginate @bulletins

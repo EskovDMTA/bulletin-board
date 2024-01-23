@@ -6,10 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/categories_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/home_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/auth_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/web/auth_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/auth_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/web/bulletins_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/web/bulletins_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/bulletins_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/bulletins/_form.html.slim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/bulletins/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/bulletins/new.html.slim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/categories/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/categories/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/admin/home/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/web/profiles/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/web/profiles/show.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/ru/notice.ru.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ru/notice.ru.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +388,7 @@
       <workItem from="1705607547222" duration="14867000" />
       <workItem from="1705861646219" duration="657000" />
       <workItem from="1706031446875" duration="501000" />
-      <workItem from="1706032404020" duration="2579000" />
+      <workItem from="1706032404020" duration="7738000" />
     </task>
     <servers />
   </component>

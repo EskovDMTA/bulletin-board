@@ -4,7 +4,7 @@ module Web
   module Admin
     class HomeController < Web::Admin::ApplicationController
       def index
-        @bulletins = Bulletin.where(state: 'under_moderation')
+        @bulletins = Bulletin.under_moderation.order(created_at: :desc).page(params[:page]).per(25)
       end
     end
   end

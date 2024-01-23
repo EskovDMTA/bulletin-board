@@ -34,3 +34,4 @@ hr
             - if bulletin.state != 'archived'
               = link_to t('bulletins.submit_archive'), archive_bulletin_path(bulletin), data: { turbo_method: :patch,
                       turbo_confirm: t('bulletin_notice.confirm_archive') }, class: 'me-2 text-danger'
+= paginate @bulletins

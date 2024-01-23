@@ -24,3 +24,4 @@
               = link_to 'Удалить', admin_category_path(category), data: { turbo_method: :delete,
                       turbo_confirm: 'Подтвердить удаление?' },
 class: 'text-danger me-1'
+  = paginate @categories

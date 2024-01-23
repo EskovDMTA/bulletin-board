@@ -23,6 +23,7 @@ module Web
     def create
       @bulletin = Bulletin.new(bulletin_params)
       @bulletin.user = current_user
+
       if @bulletin.save
         redirect_to profile_path, notice: t('bulletin_notice.create')
       else

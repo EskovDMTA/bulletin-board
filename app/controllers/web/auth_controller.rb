@@ -4,8 +4,7 @@ module Web
   class AuthController < Web::ApplicationController
     def callback
       auth = request.env['omniauth.auth']
-
-      user = User.find_by(provider: auth['provider'], uid: auth['uid']) || User.create!(build_auth_params(auth))
+      user = find_or_create_user(auth)
       sign_in(user)
       redirect_to root_path, notice: t('authentication.login')
     end
@@ -16,6 +15,13 @@ module Web
     end
 
     private
+
+    def find_or_create_user(auth)
+      user = User.find_by(provider: auth['provider'], uid: auth['uid'])
+      return user if user.present?
+
+      User.create!(build_auth_params(auth))
+    end
 
     def build_auth_params(auth)
       {

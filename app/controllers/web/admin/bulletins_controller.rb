@@ -7,45 +7,36 @@ module Web
 
       def index
         @q = Bulletin.order(title: :desc).ransack(params[:q])
-        @bulletins = @q.result(distinct: true).page(params[:page]).per(25)
-      end
-
-      def new
-        @bulletin = Bulletin.new
-      end
-
-      def create
-        @bulletin = Bulletin.new(bulletin_params)
-        if @bulletin.save
-          redirect_to admin_bulletins_path, notice: t('bulletins_notice.created')
-        else
-          render :new
-        end
+        @bulletins = @q.result.page(params[:page]).per(25)
       end
 
       def publish
-        @bulletin.publish!
-        redirect_to admin_bulletins_path, notice: t('bulletin_notice.publish')
+        if @bulletin.may_publish?
+          @bulletin.publish!
+          redirect_back fallback_location: admin_root_url, notice: t('bulletin_notice.publish.success')
+        else
+          redirect_back fallback_location: admin_root_url, notice: t('bulletin_notice.publish.error')
+        end
       end
 
       def reject
-        @bulletin.reject!
-        redirect_to admin_bulletins_path, notice: t('bulletin_notice.reject')
+        if @bulletin.may_reject?
+          @bulletin.reject!
+          redirect_back fallback_location: admin_root_url, notice: t('bulletin_notice.reject.success')
+        else
+          redirect_back fallback_location: admin_root_url, notice: t('bulletin_notice.reject.error')
+        end
       end
 
       def archive
         @bulletin.archive!
-        redirect_to admin_bulletins_path, notice: t('bulletin_notice.archive')
+        redirect_back fallback_location: admin_root_url, notice: t('bulletin_notice.reject.success')
       end
 
       private
 
       def set_bulletin
         @bulletin = Bulletin.find(params[:id])
-      end
-
-      def bulletin_params
-        params.require(:bulletin).permit(:user, :image, :title, :description)
       end
     end
   end
