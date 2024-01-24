@@ -12,7 +12,7 @@ module Web
     test 'create' do
       auth_hash = {
         provider: 'github',
-        uid: '12345',
+        uid: '1',
         info: {
           email: Faker::Internet.email,
           name: Faker::Name.first_name
@@ -23,8 +23,7 @@ module Web
 
       get callback_auth_url('github')
       assert_response :redirect
-      user = User.find_by(email: auth_hash[:info][:email])
-
+      user = User.find_by(email: auth_hash[:info][:email], uid: auth_hash[:uid], provider: auth_hash[:provider])
       assert user
       assert signed_in?
     end

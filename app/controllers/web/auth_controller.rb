@@ -18,8 +18,6 @@ module Web
 
     def find_or_create_user(auth)
       user = User.find_by(email: auth['info']['email'], provider: auth['provider'], uid: auth['uid'])
-      puts "******"
-      puts user
       return user if user.present?
 
       User.create!(build_auth_params(auth))
