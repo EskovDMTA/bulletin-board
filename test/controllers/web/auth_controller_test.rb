@@ -23,7 +23,7 @@ module Web
 
       get callback_auth_url('github')
       assert_response :redirect
-      user = User.find_by(email: auth_hash[:info][:email].downcase)
+      user = User.find_by(email: auth_hash[:info][:email])
 
       assert user
       assert signed_in?

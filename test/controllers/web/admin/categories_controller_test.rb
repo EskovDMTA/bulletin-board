@@ -6,7 +6,8 @@ module Web
   module Admin
     class CategoriesControllerTest < ActionDispatch::IntegrationTest
       setup do
-        @category = categories(:one)
+        @category = categories(:two)
+        @category_with_bulletins = categories(:one)
         @user = users(:admin)
         sign_in(@user)
       end
@@ -30,6 +31,11 @@ module Web
       test 'admin should be destroy category' do
         delete admin_category_url(@category)
         assert_nil(Category.find_by(name: @category.name))
+      end
+
+      test 'admin cannot destroy category with bulletins' do
+        delete admin_category_url(@category_with_bulletins)
+        assert(Category.find_by(name: @category_with_bulletins.name))
       end
     end
   end
