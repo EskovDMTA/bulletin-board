@@ -6,3 +6,30 @@ ru:
       published: "Опубликовано"
       rejected: "Возвращено"
       archived: "В архиве"
+    index:
+      title: "Объявления на модерации"
+
+      column_name: 'Имя'
+      column_state: 'Состояние'
+      column_created_at: 'Дата создания'
+      column_action: 'Действия'
+
+  helpers:
+    link:
+      show: 'Показать'
+      archive: 'В архив'
+      edit: 'Редактировать'
+      delete: 'Удалить'
+
+
+  confirm:
+    archive: 'Подтвердить архивацию'
+    delete: 'Подтвердить удаление?'
+
+  home:
+    title: "Объявления на модерации"
+
+    column_name: 'Имя'
+    column_created_at: 'Дата создания'
+    column_action: 'Действия'
+

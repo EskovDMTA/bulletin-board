@@ -12,13 +12,17 @@ module Web
         sign_in(@user)
       end
 
-      test 'admin should be get category routes' do
+      test 'admin should be get categories routes' do
         get admin_categories_path
         assert_response :success
+      end
 
+      test 'admin must have access to the creation category route' do
         get new_admin_category_path
         assert_response :success
+      end
 
+      test 'admin must have access to view category' do
         get edit_admin_category_path(@category)
         assert_response :success
       end

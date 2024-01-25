@@ -1,19 +1,19 @@
 .col-md-9
   h1.h2.mb-4
-    | Объявления на модерации
+    = t('bulletins.index.title')
   = render partial: 'web/shared/profile_search', locals: { q: @q, url: admin_bulletins_path }
   .row.mt-2
     table.table.table-borderless
       thead
         tr
           th
-            | Имя
+            = t('bulletins.index.column_name')
           th
-            | Состояние
+            = t('bulletins.index.column_state')
           th
-            | Дата создания
+            = t('bulletins.index.column_created_at')
           th
-            | Действия
+            = t('bulletins.index.column_action')
       tbody
         - @bulletins.each do |bulletin|
           tr
@@ -24,8 +24,9 @@
             td
               | #{time_ago_in_words(bulletin.created_at)}
             td
-              = link_to 'Показать', bulletin_path(bulletin), class: 'me-2'
+              = link_to t('helpers.link.show'), bulletin_path(bulletin), class: 'me-2'
               - unless bulletin.state == 'archived'
-                = link_to 'В архив', archive_bulletin_path(bulletin), data: { turbo_method: :patch, confirm: 'Подтвердить архивацию' },
-                      class: 'me-2 text-danger'
+                = link_to t('helpers.link.archive'), archive_bulletin_path(bulletin), data: { turbo_method: :post,
+                        confirm: t('confirm.archive') },
+                        class: 'me-2 text-danger'
   = paginate @bulletins

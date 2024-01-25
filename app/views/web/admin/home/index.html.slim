@@ -1,16 +1,16 @@
 .col-md-9
   h1.h2.mb-4
-    | Объявления на модерации
+    = t('home.title')
   .row.mt-2
     table.table.table-borderless
       thead
         tr
           th
-            | Имя
+            = t('home.column_name')
           th
-            | Дата создания
+            = t('home.column_created_at')
           th
-            | Действия
+            = t('home.column_action')
       tbody
         - @bulletins.each do |bulletin|
           tr

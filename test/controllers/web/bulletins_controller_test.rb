@@ -64,5 +64,19 @@ module Web
 
       assert_equal('archived', @bulletin.state)
     end
+
+    test 'user cannot change the ad status' do
+      post to_moderate_bulletin_path(@bulletin)
+      @bulletin.reload
+      patch publish_admin_bulletin_path(@bulletin)
+      assert_equal('under_moderation', @bulletin.state)
+    end
+
+    test 'user cannot reject bulletin' do
+      post to_moderate_bulletin_path(@bulletin)
+      @bulletin.reload
+      patch reject_admin_bulletin_path(@bulletin)
+      assert_equal('under_moderation', @bulletin.state)
+    end
   end
 end

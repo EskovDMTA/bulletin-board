@@ -1,0 +1,8 @@
+ru:
+  activerecord:
+    errors:
+      models:
+        category:
+          attributes:
+            name:
+              blank: "Название не может быть пустым"

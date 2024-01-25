@@ -21,7 +21,6 @@ hr
           td
             = bulletin.title
           td
-            / = bulletin.state
             = t("bulletins.states.#{bulletin.state}")
           td
             = time_ago_in_words(bulletin.created_at).to_s
