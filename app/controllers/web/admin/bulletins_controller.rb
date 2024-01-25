@@ -29,8 +29,12 @@ module Web
       end
 
       def archive
-        @bulletin.archive!
-        redirect_back fallback_location: admin_root_url, notice: t('bulletin_notice.reject.success')
+        if @bulletin.archive?
+          @bulletin.archive!
+          redirect_back fallback_location: admin_root_url, notice: t('bulletin_notice.archive.success')
+        else
+          redirect_back fallback_location: admin_root_url, notice: t('bulletin_notice.archive.error')
+        end
       end
 
       private
