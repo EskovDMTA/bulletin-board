@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/web/admin/bulletins_controller.rb" afterDir="false" />
-    </list>
+    <list default="true" id="6fa03583-3ef9-4e60-860d-18d0f63dd32d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -378,6 +375,7 @@
       <workItem from="1705861646219" duration="657000" />
       <workItem from="1706031446875" duration="501000" />
       <workItem from="1706032404020" duration="13871000" />
+      <workItem from="1706165452957" duration="306000" />
     </task>
     <servers />
   </component>

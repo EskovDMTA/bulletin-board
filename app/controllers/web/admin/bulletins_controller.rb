@@ -29,7 +29,7 @@ module Web
       end
 
       def archive
-        if @bulletin.archive?
+        if @bulletin.may_archive?
           @bulletin.archive!
           redirect_back fallback_location: admin_root_url, notice: t('bulletin_notice.archive.success')
         else
