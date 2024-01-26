@@ -20,7 +20,7 @@ Rails.application.routes.draw do
       resources :bulletins, only: :index do
         member do
           post :publish
-          post :archive
+          patch :archive
           patch :publish
           patch :reject
         end
